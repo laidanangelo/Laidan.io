@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <style>
+    html {
+      height: 100%;
+    }
+
+    input {
+      caret-color: white;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background: linear-gradient(#000000, #3E065F); 
+      background: #393E46;
+      background-image: linear-gradient(-225deg, #64cac9 0%, #474747 56%, #4b4a4a 100%);
+    }
+
+    .login-box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 400px;
+      padding: 40px;
+      transform: translate(-50%, -50%);
+      background: rgba(0,0,0,.5); 
+      background: #393E46;
+      box-sizing: border-box;
+      box-shadow: 0 15px 25px white;
+      border-radius: 10px;
+    }
+
+    .login-box h2 {
+      margin: 0 0 30px;
+      padding: 0;
+      color:white;
+      text-align: center;
+    }
+
+    .login-box .user-box {
+      position: relative;
+    }
+
+    .login-box .user-box input {
+      width: 100%;
+      padding: 10px 0;
+      font-size: 16px;
+      color: white;
+      margin-bottom: 30px;
+      border: none;
+      border-bottom: 1px solid white;
+      outline: none;
+      background: transparent;
+    }
+
+    .login-box .user-box label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 10px 0;
+      font-size: 16px;
+      color: white;
+      pointer-events: none;
+      transition: .5s;
+    }
+
+    .login-box .user-box input:focus~label,
+    .login-box .user-box input:valid~label {
+      top: -20px;
+      left: 0;
+      color: limegreen;
+      font-size: 12px;
+    }
+
+    .login-box form a {
+      position: relative;
+      display: inline-block;
+      padding: 10px 20px;
+      color: white;
+      font-size: 16px;
+      text-decoration: none;
+      text-transform: uppercase;
+      overflow: hidden;
+      transition: .5s;
+      margin-top: 40px;
+      letter-spacing: 4px;
+    }
+
+    .login-box a:hover {
+      background: white;
+      color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 5px white,
+        0 0 25px white,
+        0 0 50px white,
+        0 0 100px white;
+    }
+
+    p {
+      text-align: center;
+      color: white;
+      position: relative;
+      top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="login-box">
+    <h2>REGISTER NOW</h2>
+    <form>
+      <div class="user-box">
+        <input type="text" name="" required="">
+        <label>Fullname</label>
+      </div>
+      <div class="user-box">
+        <input type="text" name="" required="">
+        <label>Age</label>
+      </div>
+      <div class="user-box">
+        <input type="password" name="" required="">
+        <label>Email</label>
+      </div>
+      <div class="user-box">
+        <input type="text" name="" required="">
+        <label>Mobile No.</label>
+      </div>
+      <center><a href="#">Submit</a></center>
+       <center><div class="icons">
+        <a href="login.html" target="_blank"><i class="fa fa-chevron-circle-left">Back</i></a>
+       
+      </div></center>
+      
+    </form>
+  </div>
+  <script src="https://kit.fontawesome.com/0ee5e98bbf.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
